@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+
+    html {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+    }
+
+    .about-section {
+      padding: 50px;
+      text-align: center;
+      background-color: #474e5d;
+      color: white;
+    }
+
+    .container {
+      padding: 0 16px;
+    }
+
+    .container::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .title {
+      color: grey;
+    }
+
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .button:hover {
+      background-color: #555;
+    }
+
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+      .tec{
+        color: springgreen;
+      }
+    }
+  </style>
+  <title>About us</title>
+</head>
+
+<body>
+
+  <div class="about-section">
+    <h1 style="color: turquoise;">About Us Page</h1>
+    <p style="color: red;">We are the Students of <b style="color: rgb(71, 99, 255);">Chandighar University.</b></p>
+    <p>Are respactful teachers guides us for making this ammazing online library website.<br><i style="color: seashell;">Thank you for inspiring me
+      to be my best, and for being there to guide me when I needed help. Having you in my life opened my eyes to my own
+      inner strength and has motivated me to become and do more. You have been an incredible teacher of lessons both
+      inside and outside of the classroom. I could never thank you enough.</i></p>
+  </div>
+
+  <h2 style="text-align:center">Our Team</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="jd-chow-gutlccGLXKI-unsplash.jpg" alt="Jane" style="width:100%">
+        <div class="container">
+          <h2>Priyanshu Kumar</h2>
+          <p class="title">CSE Student</p>
+          <p>Effective skills in codding</p>
+          <p>20BCS1327cyubfe.in</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="pexels-tuấn-kiệt-jr-1391499 (1).jpg" alt="Mike" style="width:100%">
+        <div class="container">
+          <h2>Pooja Airee</h2>
+          <p class="title">Chandighar University CSE Student </p>
+          <p>Web Designer and high skill in codding</p>
+          <p>20BCS1349cfvjyt.in</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="anton-darius-3XY7BWwGolk-unsplash.jpg" alt="John" style="width:100%">
+        <div class="container">
+          <h2>Sameer Kumar </h2>
+          <p class="title">Designer</p>
+          <p>Good coder in any launguage.</p>
+          <p>john@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
